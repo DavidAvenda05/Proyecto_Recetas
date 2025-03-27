@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Caseras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js/bootstrap.min.js">
+</head>
+<body>
+
+    <script src="./js/script.js"></script>
+
+
+    <header class="header">
+        <div class="recetas container">
+            <a href="#" class="logo">Recetas Caseras</a>
+            <input type="checkbox" id="recetas" />
+            <label for="recetas">
+                <img src="Imagenes/" class="recetas-icono" alt="recetas">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contenido/carnes.html">Carnes</a></li>
+                    <li><a href="Contenido/Pastas.html">Pastas</a></li>
+                    <li><a href="Contenido/postres.html">Postres</a></li>
+                    <li><a href="Contenido/mar.html">Comida de Mar</a></li>
+                    <li><a href="Contenido/bebidas.html">Bebidas</a></li>
+                    <li><a href="Contenido/cocteles.html">Cocteles</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-texto">
+                <h1>David Avendaño</h1>
+                <p>
+                    Estudiante de Ingeniería de sistemas que disfruta mucho de hacer comida para ocasiones especiales para su familia 
+                        desde aproximadamente 7 años, por lo que he decicido realizar esta página para las personas que desean tener ideas para
+                        esas ocasiones especiales donde celebramos la vida junto nuestras familias.
+                </p>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="carousel-container">
+        <h1 class="carousel-title">Recetas Recomendadas</h1>
+        <div class="carousel-wrapper">
+            <div class="carousel-slides" id="carousel">
+                <div class="carousel-slide">
+                    <div class="carousel-txt">
+                        <h2>Recetas Recomendadas</h2>
+                        <p>Carne</p>
+                    </div>
+                    <img src="Imagenes/Carne.jpg" alt="Carne">
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-txt">
+                        <h2>Recetas Recomendadas</h2>
+                        <p>Tiramisú</p>
+                    </div>
+                    <img src="Imagenes/Tiramisu.jpg" alt="Tiramisu">
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-txt">
+                        <h2>Recetas Recomendadas</h2>
+                        <p>Coctel</p>
+                    </div>
+                    <img src="Imagenes/Coctel1.jpg" alt="Coctel">
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-txt">
+                        <h2>Recetas Recomendadas</h2>
+                        <p>Plato Especial</p>
+                    </div>
+                    <img src="Imagenes/Home.jpeg" alt="Plato Especial">
+                </div>
+            </div>
+        </div>
+        <button id="prev" class="carousel-btn">&#10094;</button>
+        <button id="next" class="carousel-btn">&#10095;</button>
+        <div class="carousel-dots" id="dots-container"></div>
+    </section>
+
+        
+    <section class="contacto container">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="respuesta"></div>
+    </section>
+</body>
+</html>

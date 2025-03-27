@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F4F0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+    url(../Imagenes/cocktail-drinks-6950673_1280.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
+}
+
+.recetas{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.recetas .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.recetas .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+}
+
+.recetas .navbar ul li a:hover{
+    color: #C9A538;
+}
+
+#recetas{
+    display: none;
+}
+
+.recetas-icono{
+    width: 25px;
+}
+
+.recetas label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-texto{
+    text-align: center;
+}
+
+.header-texto h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.header-texto p{
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
